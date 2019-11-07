@@ -75,6 +75,13 @@ public class MainActivity extends AppCompatActivity {
                 });
     }
 
+    @Override public boolean onOptionsItemSelected(MenuItem item) {
+        Intent infoIntent = new Intent(this, InfoActivity.class);
+        startActivity(infoIntent);
+
+        return super.onOptionsItemSelected(item);
+    }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
@@ -85,7 +92,11 @@ public class MainActivity extends AppCompatActivity {
     // TODO - Task 1 - Show Store Information Activity
     // ***
 
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> 87af590e6453b4606c7d41c22b0f4f51f6c08561
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         Intent intent = new Intent(this, InfoActivity.class);
